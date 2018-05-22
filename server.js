@@ -3,6 +3,8 @@ var authToken = '?????';
 var twilio = require('twilio');
 var client = new twilio(accountSid, authToken);
 
+process.env.NODE_ENV="development";
+
 require('mahrio').runServer( process.env, __dirname)
   .then( function(server){
     console.log('running');
