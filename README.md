@@ -13,4 +13,11 @@ Using MAHRIO and Twilio together
    var authToken = '?????';
 ```
 
+* Fill in the numbers to send and receive under `server.js`
+
+```
+      to: '+1??????????',  // Text this number
+      from: '+1??????????' // From a valid Twilio number
+```
+
 * Send a test SMS via `node server.js`
